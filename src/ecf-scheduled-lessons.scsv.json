@@ -1,0 +1,102 @@
+{
+  "title": "Geplante Unterrichtseinheiten",
+  "description": "ECF-Schema für geplante Unterrichtseinheiten",
+  "table": {
+    "name": "ScheduledLessons.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Title",
+        "description": "Titel der Unterrichtseinheit",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Status",
+        "description": "Status",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Draft",
+            "description": "Entwurf"
+          },
+          {
+            "value": "Finished",
+            "description": "Fertig"
+          },
+          {
+            "value": "Published",
+            "description": "Publiziert"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Relevance",
+        "description": "Relevanz",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Scheduled",
+            "description": "Geplant"
+          },
+          {
+            "value": "Additional",
+            "description": "Kurzfristig hinzugekommen"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TemporalExpressions",
+        "description": "Liste von temporären Ausdrücken",
+        "type": "json",
+        "schema": {
+          "uri": "json-temporal-expression-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseId",
+        "description": "Kurs (Verweis auf Courses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "RoomIdList",
+        "description": "Raumliste (Verweise auf Rooms.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TeacherIdList",
+        "description": "Lehrerliste (Verweise auf Teachers.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "description": "Fehlstellengründe",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "anyOf": [
+      {
+        "description": "Fehlstelle im Stundenplan wegen Abwesenheit oder Ausfall",
+        "required": [
+          "_type",
+          "AbsenceId"
+        ],
+        "properties": {
+          "_type": {
+            "const": "Absence",
+            "description": "Schlüsselwort für Abwesenheit"
+          },
+          "AbsenceId": {
+            "type": "string",
+            "description": "Lehrerabwesenheit, Klasenabwesenheit oder Raumausfall (Verweis auf eine TeacherAbsences.csv, SchoolClassAbsences.csv oder RoomAbsences.csv)."
+          }
+        }
+      }
+    ]
+  }
+}

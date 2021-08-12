@@ -1,0 +1,73 @@
+{
+  "title": "Fächer",
+  "description": "ECF-Schema für Fächer",
+  "table": {
+    "name": "Subjects.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "StatisticalCode",
+        "description": "Statistisches Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "InternalCode",
+        "description": "Internes Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "AlternativeName",
+        "description": "Alternativer Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Color",
+        "description": "Hexadezimale RGB-Farbdefinition",
+        "type": "string",
+        "optional": true,
+        "nullable": true,
+        "pattern": "^(#{0,1})([0-9A-F]{6})$"
+      },
+      {
+        "name": "SubjectTypeId",
+        "description": "Fachart (Verweis auf SubjectTypes.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "DepartmentIdList",
+        "description": "Abteilungen (Verweise auf Departments.csv )",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

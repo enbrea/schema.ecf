@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "description": "Zeitfenster in einem Zeitrahmen",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "Label",
+      "StartTime",
+      "EndTime"
+    ],
+    "properties": {
+      "Label": {
+        "type": "string",
+        "description": "Bezeichnung"
+      },
+      "StartTime": {
+        "type": "string",
+        "format": "time",
+        "description": "Startuhrzeit"
+      },
+      "EndTime": {
+        "type": "string",
+        "format": "time",
+        "description": "Enduhrzeit"
+      },
+      "Color": {
+        "name": "Color",
+        "description": "Hexadezimale RGB-Farbdefinition",
+        "type": "string",
+        "optional": true,
+        "nullable": true,
+        "pattern": "^(#{0,1})([0-9A-F]{6})$"
+      }
+    }
+  }
+}

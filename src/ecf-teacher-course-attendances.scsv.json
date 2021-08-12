@@ -1,0 +1,45 @@
+{
+  "title": "Lehrer-Kursteilnahmen",
+  "description": "ECF-Schema für Lehrer-Kursteilnahmen",
+  "table": {
+    "name": "TeacherCourseAttendances.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "CourseId",
+        "description": "Kurs (Verweis auf Courses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "EntryDate",
+        "description": "Start der Kursteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "ExitDate",
+        "description": "Ende der Kursteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TeacherId",
+        "description": "Lehrer (Verweis auf Teachers.csv)",
+        "type": "string"
+      }
+    ]
+  }
+}

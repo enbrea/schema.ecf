@@ -1,0 +1,39 @@
+{
+  "title": "Ferien",
+  "description": "ECF-Schema für Ferien",
+  "table": {
+    "name": "Vacations.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Title",
+        "description": "Titel der Ferien",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TemporalExpressions",
+        "description": "Liste von temporären Ausdrücken",
+        "type": "json",
+        "schema": {
+          "uri": "json-temporal-expression-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

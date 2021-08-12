@@ -1,0 +1,183 @@
+{
+  "title": "Kurse",
+  "description": "ECF-Schema für Kurse",
+  "table": {
+    "name": "Courses.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "StartDate",
+        "description": "Start des Kurses im Semester",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "EndDate",
+        "description": "Ende des Kurses im Semester",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Title",
+        "description": "Kurstitel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseNo",
+        "description": "Kursnummer",
+        "type": "int",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseRef",
+        "description": "Interne Kursreferenz",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseGroup",
+        "description": "Interne Kursgruppe",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseUrl",
+        "description": "Url zu Kursinhalten und -infos",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Notes",
+        "description": "Notizen zum Kurs",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Relevance",
+        "description": "Relevanz",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Scheduled",
+            "description": "Geplant"
+          },
+          {
+            "value": "Additional",
+            "description": "Außerplanmäßig"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseTypeId",
+        "description": "Kursart (Verweis auf CourseTypes.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseCategoryId",
+        "description": "Kurskategorie (Verweis auf CourseCategories.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "FlagId",
+        "description": "Kursmerkmal (Verweis auf CourseFlags.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SubjectId",
+        "description": "Fach (Verweis auf Subjects.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SubjectFocusId",
+        "description": "Fachschwerpunkt (Verweis auf SubjectFocuses.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "LanguageId",
+        "description": "Unterrichtssprache (Verweis auf Languages.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "RoomIdList",
+        "description": "Raumliste (Verweise auf Rooms.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassIdList",
+        "description": "Klassenliste (Verweise auf SchoolClasses.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StudentIdList",
+        "description": "Schülerliste (Verweise auf Students.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TeacherIdList",
+        "description": "Lehrerliste (Verweise auf Teachers.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

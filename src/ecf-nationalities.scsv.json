@@ -1,0 +1,89 @@
+{
+  "title": "Nationalitäten",
+  "description": "ECF-Schema für Schlüsselverzeichnis Nationalitäten",
+  "table": {
+    "name": "Nationalities.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "StatisticalCode",
+        "description": "Statistisches Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "InternalCode",
+        "description": "Internes Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CountryId",
+        "description": "Land (Verweis auf Countries.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Order",
+        "description": "Sortierindex",
+        "type": "int",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Status",
+        "description": "Status",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Active",
+            "description": "Aktiv"
+          },
+          {
+            "value": "Inactive",
+            "description": "Inaktiv"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Visibility",
+        "description": "Sichtbarkeit",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Visible",
+            "description": "Sichtbar"
+          },
+          {
+            "value": "Invisible",
+            "description": "Unsichtbar"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

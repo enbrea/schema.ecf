@@ -1,0 +1,45 @@
+{
+  "title": "Schüler-Klassenteilnahmen",
+  "description": "ECF-Schema für Schüler-Klassenteilnahmen",
+  "table": {
+    "name": "StudentSchoolClassAttendances.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "SchoolClassId",
+        "description": "Klassen (Verweis auf SchoolClasses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "EntryDate",
+        "description": "Start der Klassenteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "ExitDate",
+        "description": "Ende der Klassenteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StudentId",
+        "description": "Schüler (Verweis auf Students.csv)",
+        "type": "string"
+      }
+    ]
+  }
+}

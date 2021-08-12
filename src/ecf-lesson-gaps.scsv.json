@@ -1,0 +1,83 @@
+{
+  "title": "Fehlstellen",
+  "description": "ECF-Schema für Fehlstellen",
+  "table": {
+    "name": "LessonGaps.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Title",
+        "description": "Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Status",
+        "description": "Status",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Draft",
+            "description": "Entwurf"
+          },
+          {
+            "value": "Finished",
+            "description": "Fertig"
+          },
+          {
+            "value": "Published",
+            "description": "Publiziert"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "LessonId",
+        "description": "Unterrichtseinheit (Verweis auf ScheduledLessons.csv)",
+        "type": "string"
+      },
+      {
+        "name": "TemporalExpressions",
+        "description": "Liste von temporären Ausdrücken",
+        "type": "json",
+        "schema": {
+          "uri": "json-temporal-expression-array.json"
+        }
+      },
+      {
+        "name": "Reasons",
+        "description": "Ausfallgründe",
+        "type": "json",
+        "schema": {
+          "uri": "json-gap-reason-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Resolutions",
+        "description": "Auflösungen",
+        "type": "json",
+        "schema": {
+          "uri": "json-gap-resolution-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "title": "Klassen",
+  "description": "ECF-Schema für Klassen",
+  "table": {
+    "name": "SchoolClasses.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "StatisticalCode",
+        "description": "Statistisches Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "NormalizedCode",
+        "description": "Internes Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Name1",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Name2",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Alternativer Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Color",
+        "description": "Hexadezimale RGB-Farbdefinition",
+        "type": "string",
+        "optional": true,
+        "nullable": true,
+        "pattern": "^(#{0,1})([0-9A-F]{6})$"
+      },
+      {
+        "name": "SchoolClassNo",
+        "description": "Klassennummer",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassCategoryId",
+        "description": "Klassenkategorie (Verweis auf SchoolClassCategories.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassTypeId",
+        "description": "Klassenart (Verweis auf SchoolClassTypes.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassLevelId",
+        "description": "Klassenstufe (Verweis auf SchoolClassLevels.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassProfileId",
+        "description": "Klassenprofil (Verweis auf SchoolClassProfiles.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "RoomId",
+        "description": "Klassenraum (Verweis auf Rooms.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "DepartmentId",
+        "description": "Abteilung (Verweis auf Departments.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolProfileId",
+        "description": "Schulprofil (Verweis auf SchoolProfiles.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolTypeId",
+        "description": "Schulart (Verweis auf SchoolTypes.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolOrganisationId",
+        "description": "Schulorganisation (Verweis auf SchoolOrganisations.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "LanguageId",
+        "description": "Unterrichtssprache (Verweis auf Languages.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Teacher1Id",
+        "description": "1. Klassenlehrer (Verweis auf Teachers.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Teacher2Id",
+        "description": "2. Klassenlehrer (Verweis auf Teachers.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

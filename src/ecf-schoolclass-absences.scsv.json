@@ -1,0 +1,54 @@
+{
+  "title": "Klassenabwesenheiten",
+  "description": "ECF-Schema für Klassenabwesenheiten",
+  "table": {
+    "name": "SchoolClassAbsences.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Description",
+        "description": "Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StartTimepoint",
+        "description": "Start der Abwesenheit",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "EndTimepoint",
+        "description": "Ende der Abwesenheit",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "SchoolClassId",
+        "description": "Klasse (Verweis auf SchoolClasses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "ReasonId",
+        "description": "Abwesenheitsgrund (Verweis auf SchoolClassAbsenceReasons.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Lehrerabwesenheiten",
+  "description": "ECF-Schema für Lehrerabwesenheiten",
+  "table": {
+    "name": "TeacherAbsences.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Description",
+        "description": "Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StartTimepoint",
+        "description": "Start der Abwesenheit",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "EndTimepoint",
+        "description": "Ende der Abwesenheit",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "TeacherId",
+        "description": "Lehrer (Verweis auf Teachers.csv)",
+        "type": "string"
+      },
+      {
+        "name": "ReasonId",
+        "description": "Abwesenheitsgrund (Verweis auf TeacherAbsenceReasons.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

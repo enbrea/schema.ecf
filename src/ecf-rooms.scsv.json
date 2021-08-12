@@ -1,0 +1,42 @@
+{
+  "title": "Räume",
+  "description": "ECF-Schema für Räume",
+  "table": {
+    "name": "Rooms.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Color",
+        "description": "Hexadezimale RGB-Farbdefinition",
+        "type": "string",
+        "optional": true,
+        "nullable": true,
+        "pattern": "^(#{0,1})([0-9A-F]{6})$"
+      }
+    ]
+  }
+}

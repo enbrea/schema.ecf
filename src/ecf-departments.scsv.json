@@ -1,0 +1,34 @@
+{
+  "title": "Abteilungen",
+  "description": "ECF-Schema für Abteilungen",
+  "table": {
+    "name": "Departments.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

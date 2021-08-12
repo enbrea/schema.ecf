@@ -1,0 +1,257 @@
+{
+  "title": "Schüler",
+  "description": "ECF-Schema für Schüler",
+  "table": {
+    "name": "Students.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "StudentNo",
+        "description": "Interne Schülernummer",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "FirstName",
+        "description": "Vorname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "LastName",
+        "description": "Nachname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "MiddleName",
+        "description": "Mittelname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Gender",
+        "description": "Geschlecht",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Male",
+            "description": "Männlich"
+          },
+          {
+            "value": "Female",
+            "description": "Weiblich"
+          },
+          {
+            "value": "Diverse",
+            "description": "Divers"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Birthdate",
+        "description": "Geburtstag",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "PlaceOfBirth",
+        "description": "Geburtsort",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CountryOfBirthId",
+        "description": "Geburtsland (Verweis auf Countries.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CountryOfCitizenshipId",
+        "description": "Heimatland (Verweis auf Countries.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "AddressLines",
+        "description": "Adresszeile (Straße, Hausnummer, etc.)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "PostalCode",
+        "description": "Postleitzahl",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Locality",
+        "description": "Wohnort",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CountryId",
+        "description": "Land (Verweis auf Countries.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "EmailAddress",
+        "description": "E-Mail-Adresse",
+        "type": "string",
+        "format": "email",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "HomePhoneNumber",
+        "description": "Telefon zu Hause",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "OfficePhoneNumber",
+        "description": "Telefon in der Arbeit",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "MobilePhoneNumber",
+        "description": "Mobilnummer",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Orphan",
+        "description": "Verwaist?",
+        "type": "enum",
+        "members": [
+          {
+            "value": "None",
+            "description": "Kein Waisenkind"
+          },
+          {
+            "value": "HalfOrphan",
+            "description": "Halbwaise"
+          },
+          {
+            "value": "Orphan",
+            "description": "Waise"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "MaritalStatusId",
+        "description": "Ehestand (Verweis auf MaritalStatuses.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "FamilyNo",
+        "description": "Interne Familiennummer",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "NativeLanguageId",
+        "description": "Muttersprache (Verweis auf Languages.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CorrespondenceLanguageId",
+        "description": "Verkehrssprache (Verweis auf Languages.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Nationality1Id",
+        "description": "1. Nationalität (Verweis auf Nationalities.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Nationality2Id",
+        "description": "2. Nationalität (Verweis auf Nationalities.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Nationality3Id",
+        "description": "3. Nationalität (Verweis auf Nationalities.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "ReligionId",
+        "description": "Religionszugehörigkeit (Verweis auf Religions.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CountryArrivalDate",
+        "description": "Immigrationsdatum",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "LateRepatriate",
+        "description": "Spätaussiedler?",
+        "type": "bool",
+        "trueValues": [
+          "true"
+        ],
+        "falseValues": [
+          "false"
+        ],
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

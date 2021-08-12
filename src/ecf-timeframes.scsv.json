@@ -1,0 +1,116 @@
+{
+  "title": "Zeitrahmen",
+  "description": "ECF-Schema für Zeitrahmen",
+  "table": {
+    "name": "TimeFrames.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Zusätzliche Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StartOfWeek",
+        "description": "Mit welchem Wochentag fängt die Unterrichtswoche an?",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Sunday",
+            "description": "SOnntag"
+          },
+          {
+            "value": "Monday",
+            "description": "Montag"
+          },
+          {
+            "value": "Tuesday",
+            "description": "Dienstag"
+          },
+          {
+            "value": "Wednesday",
+            "description": "Mittwoch"
+          },
+          {
+            "value": "Thursday",
+            "description": "Donnerstag"
+          },
+          {
+            "value": "Friday",
+            "description": "Freitag"
+          },
+          {
+            "value": "Saturday",
+            "description": "Samstag"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "ScopeOfWeek",
+        "description": "An welchen Wochentagen findet Unterricht statt?",
+        "type": "enum-set",
+        "members": [
+          {
+            "value": "Sunday",
+            "description": "SOnntag"
+          },
+          {
+            "value": "Monday",
+            "description": "Montag"
+          },
+          {
+            "value": "Tuesday",
+            "description": "Dienstag"
+          },
+          {
+            "value": "Wednesday",
+            "description": "Mittwoch"
+          },
+          {
+            "value": "Thursday",
+            "description": "Donnerstag"
+          },
+          {
+            "value": "Friday",
+            "description": "Freitag"
+          },
+          {
+            "value": "Saturday",
+            "description": "Samstag"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TimeSlots",
+        "description": "Liste von Zeitfenstern",
+        "type": "json",
+        "schema": {
+          "uri": "https://github.com/stuebersystems/schema.ecf/src/json-timeslot-array.json"
+        }
+      }
+    ]
+  }
+}

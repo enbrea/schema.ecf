@@ -1,0 +1,61 @@
+{
+  "title": "Raumausfälle",
+  "description": "ECF-Schema für Raumausfälle",
+  "table": {
+    "name": "RoomAbsences.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Description",
+        "description": "Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StartTimepoint",
+        "description": "Start des Ausfalls",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "EndTimepoint",
+        "description": "Ende des Ausfalls",
+        "type": "date-time",
+        "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
+          "yyyy-MM-dd"
+        ]
+      },
+      {
+        "name": "RoomId",
+        "description": "Raum (Verweis auf Rooms.csv)",
+        "type": "string"
+      },
+      {
+        "name": "ReasonId",
+        "description": "Ausfallgrund (Verweis auf RoomAbsenceReasons.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "StatusId",
+        "description": "Ausfallstatus (Verweis auf RoomAbsenceStatuses.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

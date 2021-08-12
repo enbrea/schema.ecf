@@ -1,0 +1,109 @@
+{
+  "title": "Mitteilungen",
+  "description": "ECF-Schema für Mitteilungen",
+  "table": {
+    "name": "Annoucements.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Title",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "Description",
+        "description": "Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Relevance",
+        "description": "Statistisches Kürzel",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Draft",
+            "description": "Entwurf"
+          },
+          {
+            "value": "Finished",
+            "description": "Fertig"
+          },
+          {
+            "value": "Published",
+            "description": "Publiziert"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Visibility",
+        "description": "Internes Kürzel",
+        "type": "enum-set",
+        "members": [
+          {
+            "value": "AllCourses",
+            "description": "An alle Kurse"
+          },
+          {
+            "value": "AllTeachers",
+            "description": "An alle Lehrer"
+          },
+          {
+            "value": "AllSchoolClasses",
+            "description": "An alle Klassen"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TemporalExpressions",
+        "description": "Liste von temporären Ausdrücken",
+        "type": "json",
+        "schema": {
+          "uri": "json-temporal-expression-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseIdList",
+        "description": "Kursliste (Verweise auf Courses.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SchoolClassIdList",
+        "description": "Klassenliste (Verweise auf SchoolClasses.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TeacherIdList",
+        "description": "Lehrerliste (Verweise auf Teachers.csv)",
+        "type": "json",
+        "schema": {
+          "uri": "json-id-array.json"
+        },
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}
