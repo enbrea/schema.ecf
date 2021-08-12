@@ -8,7 +8,7 @@ Die Liste der Schema-Dateien [findest Du hier](src).
 
 ## Dokumentation
 
-Die Dokumentation zum ECF-Format findest Du im [GitHub-Wiki](wiki).
+Die Dokumentation zum ECF-Format findest Du im [GitHub-Wiki](https://github.com/stuebersystems/schema.ecf/wiki).
 
 ## Kann ich mithelfen?
 
