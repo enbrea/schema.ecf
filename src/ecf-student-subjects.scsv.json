@@ -1,61 +1,59 @@
 {
   "title": "Schüler-Fachdaten",
   "description": "ECF-Schema für Schüler-Fachdaten",
-  "tables": [
-    {
-      "name": "StudentSubjects.csv",
-      "type": "unordered",
-      "columns": [
-        {
-          "name": "Id",
-          "description": "Eindeutige Id",
-          "type": "string"
-        },
-        {
-          "name": "SchoolClassId",
-          "description": "Klasse (Verweis auf SchoolClasses.csv)",
-          "type": "string"
-        },
-        {
-          "name": "SubjectId",
-          "description": "Fach (Verweis auf Subjects.csv)",
-          "type": "string"
-        },
-        {
-          "name": "CourseTypeId",
-          "description": "Kursart (Verweis auf CourseTypes.csv)",
-          "type": "string",
-          "optional": true,
-          "nullable": true
-        },
-        {
-          "name": "CourseNo",
-          "description": "Kursnummer",
-          "type": "int",
-          "optional": true,
-          "nullable": true
-        },
-        {
-          "name": "EntryDate",
-          "description": "Start der Kursteilnahme",
-          "type": "date",
-          "formats": [
-            "yyyy-MM-dd"
-          ],
-          "optional": true,
-          "nullable": true
-        },
-        {
-          "name": "ExitDate",
-          "description": "Ende der Kursteilnahme",
-          "type": "date",
-          "formats": [
-            "yyyy-MM-dd"
-          ],
-          "optional": true,
-          "nullable": true
-        }
-      ]
-    }
-  ]
+  "table": {
+    "name": "StudentSubjects.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "SchoolClassId",
+        "description": "Klasse (Verweis auf SchoolClasses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "SubjectId",
+        "description": "Fach (Verweis auf Subjects.csv)",
+        "type": "string"
+      },
+      {
+        "name": "CourseTypeId",
+        "description": "Kursart (Verweis auf CourseTypes.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "CourseNo",
+        "description": "Kursnummer",
+        "type": "int",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "EntryDate",
+        "description": "Start der Kursteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "ExitDate",
+        "description": "Ende der Kursteilnahme",
+        "type": "date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
 }

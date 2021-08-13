@@ -59,6 +59,20 @@
         "nullable": true
       },
       {
+        "name": "SubjectCategoryId",
+        "description": "Fachkategorie (Verweis auf SubjectCategpories.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "SubjectGroupId",
+        "description": "Fachgruppe (Verweis auf SubjectGroups.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
         "name": "DepartmentIdList",
         "description": "Abteilungen (Verweise auf Departments.csv )",
         "type": "json",

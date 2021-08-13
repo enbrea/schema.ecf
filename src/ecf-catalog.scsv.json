@@ -22,13 +22,6 @@
         "nullable": true
       },
       {
-        "name": "InternalCode",
-        "description": "Internes Kürzel",
-        "type": "string",
-        "optional": true,
-        "nullable": true
-      },
-      {
         "name": "Name",
         "description": "Langname",
         "type": "string",

@@ -1,0 +1,204 @@
+{
+  "title": "Fachkategorien",
+  "description": "ECF-Schema für Schlüsselverzeichnis Fachkategorien",
+  "table": {
+    "name": "SubjectCategories.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "Code",
+        "description": "Kürzel",
+        "type": "string"
+      },
+      {
+        "name": "StatisticalCode",
+        "description": "Statistisches Kürzel",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "InternalCode",
+        "description": "Internes Kürzel",
+        "type": "enum",
+        "members": [
+          {
+            "value": "DEU",
+            "description": "Deutsch"
+          },
+          {
+            "value": "LIT",
+            "description": "Literatur"
+          },
+          {
+            "value": "PHI",
+            "description": "Philosophie"
+          },
+          {
+            "value": "HIS",
+            "description": "Geschichte"
+          },
+          {
+            "value": "ERD",
+            "description": "Erdkunde"
+          },
+          {
+            "value": "SOZ",
+            "description": "Sozialkunde"
+          },
+          {
+            "value": "MAT",
+            "description": "Mathematik"
+          },
+          {
+            "value": "PHY",
+            "description": "Physik"
+          },
+          {
+            "value": "CHE",
+            "description": "Chemie"
+          },
+          {
+            "value": "BIO",
+            "description": "Biologie"
+          },
+          {
+            "value": "INF",
+            "description": "Informatik"
+          },
+          {
+            "value": "FRS",
+            "description": "Fremdsprache"
+          },
+          {
+            "value": "KUN",
+            "description": "Kunst"
+          },
+          {
+            "value": "MUS",
+            "description": "Musik"
+          },
+          {
+            "value": "SPO",
+            "description": "Sport"
+          },
+          {
+            "value": "SPO-TH",
+            "description": "Sport-Theorie"
+          },
+          {
+            "value": "DSP",
+            "description": "Darstellendes Spiel"
+          },
+          {
+            "value": "REL-ETH",
+            "description": "Religion/Ethik"
+          },
+          {
+            "value": "REL-EV",
+            "description": "Evangelische Religion"
+          },
+          {
+            "value": "REL-RK",
+            "description": "Katholische Religion"
+          },
+          {
+            "value": "WIR",
+            "description": "Wirtschaft"
+          },
+          {
+            "value": "BWL-RW",
+            "description": "BWL/RW"
+          },
+          {
+            "value": "BWL-VWL",
+            "description": "BWL/VWL"
+          },
+          {
+            "value": "VWL",
+            "description": "VWL"
+          },
+          {
+            "value": "JUR",
+            "description": "Recht"
+          },
+          {
+            "value": "TEC",
+            "description": "Technik"
+          },
+          {
+            "value": "PÄD",
+            "description": "Pädagogik"
+          },
+          {
+            "value": "PSY",
+            "description": "Psychologie"
+          },
+          {
+            "value": "GES",
+            "description": "Gesundheit"
+          },
+          {
+            "value": "SEM",
+            "description": "Seminar"
+          },
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Name",
+        "description": "Langname",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Order",
+        "description": "Sortierindex",
+        "type": "int",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Status",
+        "description": "Status",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Active",
+            "description": "Aktiv"
+          },
+          {
+            "value": "Inactive",
+            "description": "Inaktiv"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Visibility",
+        "description": "Sichtbarkeit",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Visible",
+            "description": "Sichtbar"
+          },
+          {
+            "value": "Invisible",
+            "description": "Unsichtbar"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      }
+    ]
+  }
+}

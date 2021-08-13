@@ -1,0 +1,43 @@
+{
+  "title": "Schüler-Fremdsprachenfolge",
+  "description": "ECF-Schema für Schüler-Fremdsprachenfolge",
+  "table": {
+    "name": "StudentForeignLanguages.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "StudentId",
+        "description": "Schüler (Verweis auf Students.csv)",
+        "type": "string"
+      }
+      {
+        "name": "SubjectId",
+        "description": "Fach mit Kategorie 'Fremdsprache' (Verweis auf Subjects.csv)",
+        "type": "string"
+      },
+      {
+        "name": "SequenceNo",
+        "description": "1., 2., ... Fremdsprache",
+        "type": "int",
+        "minValue": "1",
+      },
+      {
+        "name": "FromLevel",
+        "description": "Von Klassenstufe",
+        "type": "int",
+        "minValue": "1",
+      },
+      {
+        "name": "ToLevel",
+        "description": "Bis Klassenstufe",
+        "type": "int",
+        "minValue": "1",
+      }
+    ]
+  }
+}
