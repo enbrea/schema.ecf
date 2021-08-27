@@ -79,7 +79,7 @@ Vorteile:
 
 CSV ist ein relationales Format, das Daten 2-dimensional abbildet: Jede Zeile in einer CSV-Datei ist ein Datensatz und jede Spalte repräsentiert ein Feld in diesen Datensätzen. Komplexere Strukturen werden standardmäßig durch zusätzliche CSV-Dateien modelliert, die untereinander eine Relationsbeziehung aufbauen. Das ist aber nicht immer gewünscht. In diesem Fall muss man den Inhalt einzelne CSV-Felder komplexer modellieren. 
 
-Das ECF-Format nutzt dafür das [JSON](https://www.json.org/json-de.html) als eingebettetes Format, d.h. die Inhalte einzelner Felder sind entweder als JSON-Array oder als JSON-Objekt gespeichert.
+Das ECF-Format nutzt dafür [JSON](https://www.json.org/json-de.html) als eingebettetes Format, d.h. die Inhalte einzelner Felder sind entweder als JSON-Array oder als JSON-Objekt gespeichert.
 
 Ein Beispiel:
 
