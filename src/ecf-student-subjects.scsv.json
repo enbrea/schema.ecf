@@ -11,6 +11,11 @@
         "type": "string"
       },
       {
+        "name": "StudentId",
+        "description": "Schüler (Verweis auf Students.csv)",
+        "type": "string"
+      },
+      {
         "name": "SchoolClassId",
         "description": "Klasse (Verweis auf SchoolClasses.csv)",
         "type": "string"
