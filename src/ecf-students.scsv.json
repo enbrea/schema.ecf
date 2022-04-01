@@ -65,6 +65,23 @@
         "nullable": true
       },
       {
+        "name": "Salutation",
+        "description": "Anrede",
+        "type": "enum",
+        "members": [
+          {
+            "value": "Mr",
+            "description": "Herr"
+          },
+          {
+            "value": "Ms",
+            "description": "Frau"
+          }
+        ],
+        "optional": true,
+        "nullable": true
+      },      
+      {
         "name": "Birthdate",
         "description": "Geburtstag",
         "type": "date",
@@ -230,6 +247,13 @@
         "nullable": true
       },
       {
+        "name": "SubjectParticipationReligionId",
+        "description": "Teilnahme am Religionsunterricht (Verweis auf Religions.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },      
+      {
         "name": "CountryArrivalDate",
         "description": "Immigrationsdatum",
         "type": "date",
@@ -249,6 +273,61 @@
         "falseValues": [
           "false"
         ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "EnrollmentTarget1Id",
+        "description": "Einschulmerkmal (Verweis auf EnrollmentTargets.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "AllDayCare",
+        "description": "Ganztagsangebot",
+        "type": "bool",
+        "trueValues": [
+          "true"
+        ],
+        "falseValues": [
+          "false"
+        ],
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Description",
+        "description": "Beschreibung",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TextAttribute1",
+        "description": "Freies Text-Merkmalsfeld 1 (MAGELLAN: MerkmalB1)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }, 
+      {
+        "name": "TextAttribute2",
+        "description": "Freies Text-Merkmalsfeld 2 (MAGELLAN: MerkmalB2)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TextAttribute3",
+        "description": "Freies Text-Merkmalsfeld 3 (MAGELLAN: MerkmalB3)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "TextAttribute4",
+        "description": "Freies Text-Merkmalsfeld 4 (MAGELLAN: MerkmalB4)",
+        "type": "string",
         "optional": true,
         "nullable": true
       }

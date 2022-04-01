@@ -1,0 +1,81 @@
+{
+  "title": "KlassenZeiträume",
+  "description": "ECF-Schema für zeitraumgebundene Klassendaten",
+  "table": {
+    "name": "SchoolClassTerm.csv",
+    "type": "unordered",
+    "columns": [
+      {
+        "name": "Id",
+        "description": "Eindeutige Id",
+        "type": "string"
+      },
+      {
+        "name": "SchoolClassId",
+        "description": "Klasse (Verweis auf SchoolClasses.csv)",
+        "type": "string"
+      },
+      {
+        "name": "SchoolTermId",
+        "description": "Zeitraum (Verweis auf SchoolTerms.csv)",
+        "type": "string"        
+      }, 
+      {
+        "name": "SchoolClassYear",
+        "description": "Jahrgang",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Teacher1Id",
+        "description": "1. Klassenlehrer (Verweis auf Teachers.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Teacher2Id",
+        "description": "2. Klassenlehrer (Verweis auf Teachers.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Student1Id",
+        "description": "1. Klassensprecher (Verweis auf Students.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Student2Id",
+        "description": "2. Klassensprecher (Verweis auf Students.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },      
+      {
+        "name": "Custodian1Id",
+        "description": "1. Klassenelternsprecher (Verweis auf Custodians.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "Custodian2Id",
+        "description": "2. Klassenelternsprecher (Verweis auf Custodians.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      },
+      {
+        "name": "RoomId",
+        "description": "Klassenraum (Verweis auf Rooms.csv)",
+        "type": "string",
+        "optional": true,
+        "nullable": true
+      }               
+    ]
+  }
+}

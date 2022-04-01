@@ -16,6 +16,11 @@
         "type": "string"
       },
       {
+        "name": "SchoolTermId",
+        "description": "Zeitraum (Verweis auf SchoolTerms.csv)",
+        "type": "string"        
+      },         
+      {
         "name": "StatisticalCode",
         "description": "Statistisches Kürzel",
         "type": "string",
@@ -92,14 +97,7 @@
         "type": "string",
         "optional": true,
         "nullable": true
-      },
-      {
-        "name": "RoomId",
-        "description": "Klassenraum (Verweis auf Rooms.csv)",
-        "type": "string",
-        "optional": true,
-        "nullable": true
-      },
+      },      
       {
         "name": "DepartmentId",
         "description": "Abteilung (Verweis auf Departments.csv)",
@@ -134,21 +132,14 @@
         "type": "string",
         "optional": true,
         "nullable": true
-      },
+      },      
       {
-        "name": "Teacher1Id",
-        "description": "1. Klassenlehrer (Verweis auf Teachers.csv)",
+        "name": "GradeSystemId",
+        "description": "Notenart (Verweis auf GradeSystems.csv)",
         "type": "string",
         "optional": true,
         "nullable": true
-      },
-      {
-        "name": "Teacher2Id",
-        "description": "2. Klassenlehrer (Verweis auf Teachers.csv)",
-        "type": "string",
-        "optional": true,
-        "nullable": true
-      }
+      }               
     ]
   }
 }

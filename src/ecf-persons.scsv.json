@@ -1,8 +1,8 @@
 {
-  "title": "Lehrer",
-  "description": "ECF-Schema für Lehrer",
+  "title": "Persons",
+  "description": "ECF-Schema für Personen",
   "table": {
-    "name": "Teachers.csv",
+    "name": "Persons.csv",
     "type": "unordered",
     "columns": [
       {
@@ -200,27 +200,7 @@
         "type": "string",
         "optional": true,
         "nullable": true
-      },
-      {
-        "name": "StartDate",
-        "description": "Datum des Vertragsanfang",
-        "type": "date",
-        "formats": [
-          "yyyy-MM-dd"
-        ],
-        "optional": true,
-        "nullable": true
-      },
-      {
-        "name": "EndDate",
-        "description": "Datum des Vertragsende",
-        "type": "date",
-        "formats": [
-          "yyyy-MM-dd"
-        ],
-        "optional": true,
-        "nullable": true
-      }
+      }      
     ]
   }
 }
