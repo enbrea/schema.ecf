@@ -2,7 +2,7 @@
 
 Das ENBREA CSV Format (kurz ECF-Format) dient zum Importieren von Daten nach ENBREA und zum Exportieren von Daten aus ENBREA. Auch andere Anwendungen wie z.B. DAVINCI und MAGELLAN unterstützen das ECF-Format.
 
-Das ECF-Format umfasst einen standardisierte Menge von CSV-Dateien, die mit Hilfe von [Simple CSV Schema](https://github.com/simple-csv-schema/simple-csv-schema.spec) formal spezifiziert sind. 
+Das ECF-Format umfasst einen standardisierte Menge von CSV-Dateien, die mit Hilfe von [CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) formal spezifiziert sind. 
 
 ## Dokumentation
 
@@ -10,65 +10,71 @@ Das ECF-Format umfasst einen standardisierte Menge von CSV-Dateien, die mit Hilf
 
 Die Liste aller Schema-Dateien [findest Du hier](src).
 
+#### Manifest
+
+Dateiname                         | Inhalt                          | Spezifikation
+--------------------------------- | ------------------------------- | -------------
+Manifest.csv                      | Globale Daten                   | [CSV-Schema](src/ecf-manifest.csvts.json)
+
 #### Schlüsselverzeichnisse
 
 Dateiname                         | Inhalt                          | Spezifikation
 --------------------------------- | ------------------------------- | -------------
-Countries.csv                     | Staaten                         | [CSV-Schema](src/ecf-countries.scsv.json)
-CourseCategories.csv              | Kurskategorien                  | [CSV-Schema](src/ecf-catalog.scsv.json)
-CourseFlags.csv                   | Kursmerkmale                    | [CSV-Schema](src/ecf-catalog.scsv.json)
-CourseTypes.csv                   | Kursarten                       | [CSV-Schema](src/ecf-catalog.scsv.json)
-Languages.csv                     | Sprachen                        | [CSV-Schema](src/ecf-languages.scsv.json)
-MaritalStatuses.csv               | Ehestände                       | [CSV-Schema](src/ecf-catalog.scsv.json)
-Nationalities.csv                 | Nationalitäten                  | [CSV-Schema](src/ecf-nationalities.scsv.json)
-Religions.csv                     | Religionszugehörigkeiten        | [CSV-Schema](src/ecf-catalog.scsv.json)
-RoomAbsenceReasons.csv            | Raumausfallgründe               | [CSV-Schema](src/ecf-catalog.scsv.json)
-RoomAbsenceStatuses.csv           | Raumausfallstatus               | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolClassAbsenceReasons.csv     | Klassenabwesenheitsgründe       | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolClassCategories.csv         | Klassenkategorien               | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolClassLevels.csv             | Klassenstufen                   | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolClassProfiles.csv           | Klassenprofile                  | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolClassTypes.csv              | Klassenarten                    | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolOrganisations.csv           | Schulorganisationen             | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolProfiles.csv                | Schulprofile                    | [CSV-Schema](src/ecf-catalog.scsv.json)
-SchoolTypes.csv                   | Schularten                      | [CSV-Schema](src/ecf-catalog.scsv.json)
-SubjectFocuses.csv                | Fachschwerpunkte                | [CSV-Schema](src/ecf-catalog.scsv.json)
-SubjectCategories.csv             | Fachkategorien                  | [CSV-Schema](src/ecf-subject-categories.scsv.json)
-SubjectGroups.csv                 | Fachgruppen                     | [CSV-Schema](src/ecf-catalog.scsv.json)
-SubjectTypes.csv                  | Facharten                       | [CSV-Schema](src/ecf-catalog.scsv.json)
-TeacherAbsenceReasons.csv         | Lehrerabwesenheitsgründen       | [CSV-Schema](src/ecf-catalog.scsv.json)
+Countries.csv                     | Staaten                         | [CSV-Schema](src/ecf-countries.csvts.json)
+CourseCategories.csv              | Kurskategorien                  | [CSV-Schema](src/ecf-catalog.csvts.json)
+CourseFlags.csv                   | Kursmerkmale                    | [CSV-Schema](src/ecf-catalog.csvts.json)
+CourseTypes.csv                   | Kursarten                       | [CSV-Schema](src/ecf-catalog.csvts.json)
+Languages.csv                     | Sprachen                        | [CSV-Schema](src/ecf-languages.csvts.json)
+MaritalStatuses.csv               | Ehestände                       | [CSV-Schema](src/ecf-catalog.csvts.json)
+Nationalities.csv                 | Nationalitäten                  | [CSV-Schema](src/ecf-nationalities.csvts.json)
+Religions.csv                     | Religionszugehörigkeiten        | [CSV-Schema](src/ecf-catalog.csvts.json)
+RoomAbsenceReasons.csv            | Raumausfallgründe               | [CSV-Schema](src/ecf-catalog.csvts.json)
+RoomAbsenceStatuses.csv           | Raumausfallstatus               | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolClassAbsenceReasons.csv     | Klassenabwesenheitsgründe       | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolClassCategories.csv         | Klassenkategorien               | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolClassLevels.csv             | Klassenstufen                   | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolClassProfiles.csv           | Klassenprofile                  | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolClassTypes.csv              | Klassenarten                    | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolOrganisations.csv           | Schulorganisationen             | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolProfiles.csv                | Schulprofile                    | [CSV-Schema](src/ecf-catalog.csvts.json)
+SchoolTypes.csv                   | Schularten                      | [CSV-Schema](src/ecf-catalog.csvts.json)
+SubjectFocuses.csv                | Fachschwerpunkte                | [CSV-Schema](src/ecf-catalog.csvts.json)
+SubjectCategories.csv             | Fachkategorien                  | [CSV-Schema](src/ecf-subject-categories.csvts.json)
+SubjectGroups.csv                 | Fachgruppen                     | [CSV-Schema](src/ecf-catalog.csvts.json)
+SubjectTypes.csv                  | Facharten                       | [CSV-Schema](src/ecf-catalog.csvts.json)
+TeacherAbsenceReasons.csv         | Lehrerabwesenheitsgründen       | [CSV-Schema](src/ecf-catalog.csvts.json)
 
 #### Schuldaten
 
 Dateiname                         | Inhalt                          | Spezifikation
 --------------------------------- | ------------------------------- | -------------
-Announcements.csv                 | Mitteilungen                    | [CSV-Schema](src/ecf-announcements.scsv.json)
-Courses.csv                       | Kurse                           | [CSV-Schema](src/ecf-courses.scsv.json)
-Departments.csv                   | Abteilungen                     | [CSV-Schema](src/ecf-departments.scsv.json)
-LessonGaps.csv                    | Fehlstellen                     | [CSV-Schema](src/ecf-lesson-gaps.scsv.json)
-RoomAbsences.csv                  | Raumausfälle                    | [CSV-Schema](src/ecf-room-absences.scsv.json)
-Rooms.csv                         | Räume                           | [CSV-Schema](src/ecf-rooms.scsv.json)
-ScheduledLessons.csv              | Verplanter Unterricht           | [CSV-Schema](src/ecf-scheduled-lessons.scsv.json)
-SchoolClassAbsences.csv           | Klassenabwesenheiten            | [CSV-Schema](src/ecf-schoolclass-absences.scsv.json)
-SchoolClasses.csv                 | Klassen                         | [CSV-Schema](src/ecf-schoolclasses.scsv.json)
-StudentCourseAttendances.csv      | Schüler-Kursteilnahmen          | [CSV-Schema](src/ecf-student-course-attendances.scsv.json)
-StudentForeignLangusges.csv       | Schüler-Fremdsprachenfolge      | [CSV-Schema](src/ecf-student-foreign-languages.scsv.json)
-StudentSchoolClassAttendances.csv | Schüler-Klassenteilnahmen       | [CSV-Schema](src/ecf-student-schoolclass-attendances.scsv.json)
-StudentSubjects.csv               | Schüler-Fachdaten               | [CSV-Schema](src/ecf-student-subjects.scsv.json)
-Students.csv                      | Schüler                         | [CSV-Schema](src/ecf-students.scsv.json)
-Subjects.csv                      | Fächer                          | [CSV-Schema](src/ecf-subjects.scsv.json)
-SubstituteLessons.csv             | Vertretungsunterricht           | [CSV-Schema](src/ecf-substitute-lessons.scsv.json)
-TeacherAbsences.csv               | Lehrer-Abwesenheiten            | [CSV-Schema](src/ecf-teacher-absences.scsv.json)
-TeacherCourseAttendances.csv      | Lehrer-Kursteilnahmen           | [CSV-Schema](src/ecf-teacher-course-attendances.scsv.json)
-Teachers.csv                      | Lehrer                          | [CSV-Schema](src/ecf-teachers.scsv.json)
-TimeFrames.csv                    | Zeitrahmen                      | [CSV-Schema](src/ecf-timeframes.scsv.json)
-Vacations.csv                     | Ferien                          | [CSV-Schema](src/ecf-vacations.scsv.json)
+Announcements.csv                 | Mitteilungen                    | [CSV-Schema](src/ecf-announcements.csvts.json)
+Courses.csv                       | Kurse                           | [CSV-Schema](src/ecf-courses.csvts.json)
+Departments.csv                   | Abteilungen                     | [CSV-Schema](src/ecf-departments.csvts.json)
+LessonGaps.csv                    | Fehlstellen                     | [CSV-Schema](src/ecf-lesson-gaps.csvts.json)
+RoomAbsences.csv                  | Raumausfälle                    | [CSV-Schema](src/ecf-room-absences.csvts.json)
+Rooms.csv                         | Räume                           | [CSV-Schema](src/ecf-rooms.csvts.json)
+ScheduledLessons.csv              | Verplanter Unterricht           | [CSV-Schema](src/ecf-scheduled-lessons.csvts.json)
+SchoolClassAbsences.csv           | Klassenabwesenheiten            | [CSV-Schema](src/ecf-schoolclass-absences.csvts.json)
+SchoolClasses.csv                 | Klassen                         | [CSV-Schema](src/ecf-schoolclasses.csvts.json)
+StudentCourseAttendances.csv      | Schüler-Kursteilnahmen          | [CSV-Schema](src/ecf-student-course-attendances.csvts.json)
+StudentForeignLangusges.csv       | Schüler-Fremdsprachenfolge      | [CSV-Schema](src/ecf-student-foreign-languages.csvts.json)
+StudentSchoolClassAttendances.csv | Schüler-Klassenteilnahmen       | [CSV-Schema](src/ecf-student-schoolclass-attendances.csvts.json)
+StudentSubjects.csv               | Schüler-Fachdaten               | [CSV-Schema](src/ecf-student-subjects.csvts.json)
+Students.csv                      | Schüler                         | [CSV-Schema](src/ecf-students.csvts.json)
+Subjects.csv                      | Fächer                          | [CSV-Schema](src/ecf-subjects.csvts.json)
+SubstituteLessons.csv             | Vertretungsunterricht           | [CSV-Schema](src/ecf-substitute-lessons.csvts.json)
+TeacherAbsences.csv               | Lehrer-Abwesenheiten            | [CSV-Schema](src/ecf-teacher-absences.csvts.json)
+TeacherCourseAttendances.csv      | Lehrer-Kursteilnahmen           | [CSV-Schema](src/ecf-teacher-course-attendances.csvts.json)
+Teachers.csv                      | Lehrer                          | [CSV-Schema](src/ecf-teachers.csvts.json)
+TimeFrames.csv                    | Zeitrahmen                      | [CSV-Schema](src/ecf-timeframes.csvts.json)
+Vacations.csv                     | Ferien                          | [CSV-Schema](src/ecf-vacations.csvts.json)
 
 ### Konzepte
 
 #### CSV-Schema
 
-ECF ist mit Hilfe von [Simple CSV Schema](https://github.com/simple-csv-schema/simple-csv-schema.spec) formal spezifiziert. 
+ECF ist mit Hilfe von [CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) formal spezifiziert. 
 
 Vorteile:
 
@@ -90,7 +96,7 @@ Id;Code;Name;DepartmentIdList
 
 Das Feld `DepartmentIdList` ist hier als JSON-Array mit zwei Id-Einträgen formatiert.
 
-[Simple CSV Schema](https://github.com/simple-csv-schema/simple-csv-schema.spec) unterstützt [JSON-Schema](https://json-schema.org/) als Unterschema, so dass einer vollständigen Validierung von ECF nichts im Wege steht.
+[CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) unterstützt [JSON-Schema](https://json-schema.org/) als Unterschema, so dass einer vollständigen Validierung von ECF nichts im Wege steht.
 
 ## Kann ich mithelfen?
 

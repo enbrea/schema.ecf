@@ -78,12 +78,12 @@
           },
           "ValidFrom": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "description": "Startdatum der Gültigkeit des zeitlichen Ausdrucks."
           },
           "ValidTo": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "description": "Enddatum der Gültigkeit des zeitlichen Ausdrucks."
           },
           "DaysOfWeek": {
