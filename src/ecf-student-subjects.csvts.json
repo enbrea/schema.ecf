@@ -37,8 +37,10 @@
       {
         "name": "EntryDate",
         "description": "Start der Kursteilnahme",
-        "type": "date",
+        "type": "date-time",
         "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
           "yyyy-MM-dd"
         ],
         "optional": true,
@@ -47,8 +49,10 @@
       {
         "name": "ExitDate",
         "description": "Ende der Kursteilnahme",
-        "type": "date",
+        "type": "date-time",
         "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
           "yyyy-MM-dd"
         ],
         "optional": true,

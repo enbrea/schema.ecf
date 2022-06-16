@@ -13,8 +13,10 @@
       {
         "name": "StartDate",
         "description": "Start des Kurses im Semester",
-        "type": "date",
+        "type": "date-time",
         "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
           "yyyy-MM-dd"
         ],
         "optional": true,
@@ -23,8 +25,10 @@
       {
         "name": "EndDate",
         "description": "Ende des Kurses im Semester",
-        "type": "date",
+        "type": "date-time",
         "formats": [
+          "yyyy-MM-dd'T'HH:mm:ss",
+          "yyyy-MM-dd'T'HH:mm",
           "yyyy-MM-dd"
         ],
         "optional": true,
