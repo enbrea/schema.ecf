@@ -74,7 +74,7 @@ Vacations.csv                     | Ferien                          | [CSV-Schem
 
 #### CSV-Schema
 
-ECF ist mit Hilfe von [CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) formal spezifiziert. 
+ECF ist mit Hilfe von [CSV Table Schema](https://openpotato.github.io/csv-table-schema/) formal spezifiziert. 
 
 Vorteile:
 
@@ -96,7 +96,7 @@ Id;Code;Name;DepartmentIdList
 
 Das Feld `DepartmentIdList` ist hier als JSON-Array mit zwei Id-Einträgen formatiert.
 
-[CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) unterstützt [JSON-Schema](https://json-schema.org/) als Unterschema, so dass einer vollständigen Validierung von ECF nichts im Wege steht.
+[CSV Table Schema](https://openpotato.github.io/csv-table-schema/) unterstützt [JSON-Schema](https://json-schema.org/) als Unterschema, so dass einer vollständigen Validierung von ECF nichts im Wege steht.
 
 ## Kann ich mithelfen?
 
