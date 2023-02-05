@@ -2,7 +2,7 @@
 
 Das ENBREA CSV Format (kurz ECF-Format) dient zum Importieren von Daten nach ENBREA und zum Exportieren von Daten aus ENBREA. Auch andere Anwendungen wie z.B. DAVINCI und MAGELLAN unterstützen das ECF-Format.
 
-Das ECF-Format umfasst einen standardisierte Menge von CSV-Dateien, die mit Hilfe von [CSV Table Schema](https://github.com/csv-table-schema/csv-table-schema.spec) formal spezifiziert sind. 
+Das ECF-Format umfasst einen standardisierte Menge von CSV-Dateien, die mit Hilfe von [CSV Table Schema](https://openpotato.github.io/csv-table-schema/) formal spezifiziert sind. 
 
 ## Dokumentation
 
